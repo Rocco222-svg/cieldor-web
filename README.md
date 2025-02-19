@@ -3,18 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ciel d'or - Joyas Personalizadas</title>
+    <title>Ciel d’or - Joyas Personalizadas</title>
     <style>
         body {
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #f4f4f4;
         }
         header {
-            background-color: #222;
+            background: black;
             color: gold;
-            padding: 20px;
+            padding: 10px;
             text-align: center;
             font-size: 24px;
             font-weight: bold;
@@ -22,88 +21,85 @@
         nav {
             display: flex;
             justify-content: center;
-            background: black;
+            background: gold;
             padding: 10px;
         }
         nav a {
-            color: white;
             text-decoration: none;
-            padding: 10px 20px;
-            font-size: 18px;
+            color: black;
+            padding: 10px;
+            font-weight: bold;
         }
-        section {
-            max-width: 1000px;
-            margin: auto;
+        .container {
+            text-align: center;
             padding: 20px;
-            background: white;
-            box-shadow: 0px 0px 10px gray;
-            margin-top: 20px;
         }
         .product {
-            display: flex;
-            justify-content: space-between;
-            margin-bottom: 20px;
-        }
-        .product img {
-            width: 300px;
-            border-radius: 10px;
+            display: inline-block;
+            width: 200px;
+            margin: 10px;
         }
         footer {
             background: black;
             color: white;
             text-align: center;
-            padding: 10px;
-            margin-top: 20px;
+            padding: 20px;
+            position: relative;
+            bottom: 0;
+            width: 100%;
         }
     </style>
 </head>
 <body>
     <header>
-        Ciel d'or - Joyas Personalizadas
+        Ciel d’or - Joyas Personalizadas
     </header>
     <nav>
-        <a href="#quienes-somos">Quiénes Somos</a>
-        <a href="#productos">Productos</a>
-        <a href="#innovacion">Innovación</a>
-        <a href="#contacto">Contacto</a>
+        <a href="#inicio">Inicio</a>
+        <a href="#joyas">Joyas</a>
+        <a href="#rebajas">Rebajas</a>
+        <a href="#sobre-nosotros">Sobre Nosotros</a>
+        <a href="#tiendas">Tiendas</a>
+        <a href="#ayuda">Ayuda</a>
+        <a href="#login">Iniciar Sesión</a>
     </nav>
-    
-    <section id="quienes-somos">
-        <h2>Quiénes Somos</h2>
-        <p>Somos una marca de joyería innovadora que permite la personalización completa de tus joyas. Nuestra especialidad es la integración de chips de salud en nuestras piezas para monitorizar el bienestar del usuario.</p>
-    </section>
-    
-    <section id="productos">
-        <h2>Nuestros Productos</h2>
+    <div class="container" id="inicio">
+        <h2>Bienvenidos a Ciel d’or</h2>
+        <p>Joyas personalizadas con tecnología innovadora.</p>
+    </div>
+    <div class="container" id="joyas">
+        <h2>Nuestra Colección</h2>
         <div class="product">
-            <img src="https://via.placeholder.com/300" alt="Anillo personalizado">
-            <div>
-                <h3>Anillo Personalizado</h3>
-                <p>Diseñado a medida con materiales premium como oro, plata y acero. Opción de integrar un chip de salud.</p>
-            </div>
+            <img src="anillo.jpg" alt="Anillo personalizado" width="200">
+            <p>Anillo con chip de salud - 199€</p>
         </div>
         <div class="product">
-            <img src="https://via.placeholder.com/300" alt="Pulsera Inteligente">
-            <div>
-                <h3>Pulsera Inteligente</h3>
-                <p>Estilo y tecnología en un solo accesorio. Monitorea tu bienestar mientras luces increíble.</p>
-            </div>
+            <img src="collar.jpg" alt="Collar personalizado" width="200">
+            <p>Collar exclusivo - 149€</p>
         </div>
-    </section>
-    
-    <section id="innovacion">
-        <h2>Innovación y Sostenibilidad</h2>
-        <p>Utilizamos materiales reciclados y responsables. Apostamos por la impresión 3D para reducir residuos y promovemos un consumo consciente.</p>
-    </section>
-    
-    <section id="contacto">
-        <h2>Contacto</h2>
-        <p>Email: info@cieldor.com</p>
-        <p>Teléfono: 93 123 45 67</p>
-    </section>
-    
+    </div>
+    <div class="container" id="rebajas">
+        <h2>Rebajas</h2>
+        <p>Descuentos de hasta el 40% en nuestra colección.</p>
+    </div>
+    <div class="container" id="sobre-nosotros">
+        <h2>Sobre Nosotros</h2>
+        <p>Ciel d’or es una marca de joyería personalizada con tecnología innovadora.</p>
+    </div>
+    <div class="container" id="tiendas">
+        <h2>Nuestras Tiendas</h2>
+        <p>Encuéntranos en Barcelona - Passeig de Gràcia y El Born.</p>
+    </div>
+    <div class="container" id="ayuda">
+        <h2>Ayuda</h2>
+        <p>Consulta nuestras preguntas frecuentes sobre envíos y devoluciones.</p>
+    </div>
+    <div class="container" id="login">
+        <h2>Iniciar Sesión</h2>
+        <p>Accede a tu cuenta para gestionar tus pedidos.</p>
+    </div>
     <footer>
-        &copy; 2025 Ciel d'or - Todos los derechos reservados.
+        &copy; 2025 Ciel d’or | Política de Privacidad | Términos y Condiciones
     </footer>
 </body>
 </html>
