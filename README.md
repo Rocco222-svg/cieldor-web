@@ -9,55 +9,101 @@
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            text-align: center;
+            background-color: #f4f4f4;
         }
         header {
-            background-color: #000;
+            background-color: #222;
             color: gold;
             padding: 20px;
+            text-align: center;
             font-size: 24px;
+            font-weight: bold;
         }
-        .section {
-            padding: 40px;
+        nav {
+            display: flex;
+            justify-content: center;
+            background: black;
+            padding: 10px;
         }
-        .footer {
-            background-color: black;
-            color: gold;
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 10px 20px;
+            font-size: 18px;
+        }
+        section {
+            max-width: 1000px;
+            margin: auto;
             padding: 20px;
-            position: absolute;
-            bottom: 0;
-            width: 100%;
+            background: white;
+            box-shadow: 0px 0px 10px gray;
+            margin-top: 20px;
+        }
+        .product {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 20px;
+        }
+        .product img {
+            width: 300px;
+            border-radius: 10px;
+        }
+        footer {
+            background: black;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            margin-top: 20px;
         }
     </style>
 </head>
 <body>
     <header>
-        <h1>Ciel d'or - Joyas Personalizadas</h1>
+        Ciel d'or - Joyas Personalizadas
     </header>
+    <nav>
+        <a href="#quienes-somos">Quiénes Somos</a>
+        <a href="#productos">Productos</a>
+        <a href="#innovacion">Innovación</a>
+        <a href="#contacto">Contacto</a>
+    </nav>
     
-    <div class="section">
-        <h2>Diseño Exclusivo</h2>
-        <p>Crea joyas únicas con la ayuda de nuestros diseñadores.</p>
-    </div>
+    <section id="quienes-somos">
+        <h2>Quiénes Somos</h2>
+        <p>Somos una marca de joyería innovadora que permite la personalización completa de tus joyas. Nuestra especialidad es la integración de chips de salud en nuestras piezas para monitorizar el bienestar del usuario.</p>
+    </section>
     
-    <div class="section">
-        <h2>Innovación y Tecnología</h2>
-        <p>Nuestras joyas pueden incluir un chip que monitoriza la salud en tiempo real.</p>
-    </div>
+    <section id="productos">
+        <h2>Nuestros Productos</h2>
+        <div class="product">
+            <img src="https://via.placeholder.com/300" alt="Anillo personalizado">
+            <div>
+                <h3>Anillo Personalizado</h3>
+                <p>Diseñado a medida con materiales premium como oro, plata y acero. Opción de integrar un chip de salud.</p>
+            </div>
+        </div>
+        <div class="product">
+            <img src="https://via.placeholder.com/300" alt="Pulsera Inteligente">
+            <div>
+                <h3>Pulsera Inteligente</h3>
+                <p>Estilo y tecnología en un solo accesorio. Monitorea tu bienestar mientras luces increíble.</p>
+            </div>
+        </div>
+    </section>
     
-    <div class="section">
-        <h2>Compromiso con la Sostenibilidad</h2>
-        <p>Utilizamos materiales reciclados y obtenidos de forma responsable.</p>
-    </div>
+    <section id="innovacion">
+        <h2>Innovación y Sostenibilidad</h2>
+        <p>Utilizamos materiales reciclados y responsables. Apostamos por la impresión 3D para reducir residuos y promovemos un consumo consciente.</p>
+    </section>
     
-    <div class="section">
+    <section id="contacto">
         <h2>Contacto</h2>
         <p>Email: info@cieldor.com</p>
-        <p>Instagram: @cieldor</p>
-    </div>
+        <p>Teléfono: 93 123 45 67</p>
+    </section>
     
-    <footer class="footer">
-        <p>&copy; 2025 Ciel d'or. Todos los derechos reservados.</p>
+    <footer>
+        &copy; 2025 Ciel d'or - Todos los derechos reservados.
     </footer>
 </body>
 </html>
